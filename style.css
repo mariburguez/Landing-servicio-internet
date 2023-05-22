@@ -324,7 +324,7 @@ footer{
   .btn {
     display: block;
     border-radius: 0.5rem;
-    background-color: #019df4;
+    background-color: #072538;
     ;
     padding: 0.75rem 2rem;
     text-align: center;
@@ -338,11 +338,13 @@ footer{
   }
   
   .btn:hover {
-    background-color: rgb(79 70 229 );
+    background-color: #019df4;
+
+
   }
   
   .btn:active {
-    background-color: rgb(67 56 202 );
+    background-color: #019df4;
   }
 
   /* ----------------------------Minis cards de beneficios------------------------------- */
