@@ -1,0 +1,546 @@
+/*este código aplica un reinicio básico de estilos a todos los elementos 
+de la página, eliminando los márgenes y rellenos predeterminados y estableciendo 
+el modelo de caja "border-box" para unamejor gestión del diseño y el tamaño de los elementos.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}   
+
+
+/*boton contacto*/
+.boton{
+    background-color: #019df4;
+    color: white;
+    padding: 7%;
+    margin: 16%;
+}
+
+
+header {
+    height: 15vh;
+    /*es para que el nav se mantenga al bajar*/
+    /*position: fixed;*/
+    z-index: 3;
+    width: 100%;
+    
+    
+}
+ 
+.navegacion {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+       
+}  
+
+/* .logo{
+    display: flex;
+    align-self: flex-start; 
+    
+    
+} */
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.menu>li>a {
+    display: block;
+    padding: 15px; 
+    color: black;
+    font-family: Arial, Helvetica;
+    text-decoration: none;
+} 
+
+.menu li a:hover {
+    color: rgb(35, 96, 187);
+    transition: all .3s;
+}
+
+/* elimina las viñetas o números de los elementos de la lista*/
+
+
+/*para que no salga en columna, lo vuelve fila*/
+/* .menu>li {
+    position: relative;
+    display: inline-block;
+}  */
+
+/* h3{ 
+    font-family: theSans;
+}
+@font-face {
+    font-family: theSans;
+    src: url(Letra//MerriweatherSans-Italic-VariableFont_wght.ttf);
+} */
+.c1, .c2, .c3{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 250px;
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    
+    
+}
+.boton3{
+    background-color: #019df4;
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin: 2%;
+    
+}
+.cajas{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.icono{
+    padding: 8%;
+    
+}
+
+
+
+
+
+.c11, .c22, .c33, .c44{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 300px;
+    height:100px;
+    margin: 30px;
+    display: flex;
+    
+}
+
+.c111, .c222, .c333, .c444, .c555{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 600px;
+    height:50px;
+    margin: 30px;
+    border-radius: 5%;
+    
+}
+
+
+
+
+.seccion4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ajusta la altura según sea necesario */
+}
+
+
+.cajass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+  /* Estilos de las cajas */
+  
+.cajass > div {
+    margin: 1px;
+    
+    
+   
+}
+.boton2{
+    background-color: white;
+    color: black;
+    
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #072538;
+}
+
+.H2-title{
+    height: 5vh; 
+    text-align: center;
+    padding-bottom: 87px;
+    font-size: 50px;
+    color: white;
+}
+h2{
+  height: 6vh; 
+  text-align: center;
+  color: #313235;
+  font-size: 30px;
+}
+h3{
+    height: 5vh; 
+    text-align: center;
+    color: white;
+} 
+.h4-title{
+  padding-right: 20px;
+} 
+.h4-info{
+  padding-left: 194px;
+  } 
+
+.question{
+  color:#313235 ;
+  text-align: left;
+} 
+
+footer{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+} 
+/* ----------------------------Nuevos estilos UI cards, mini cards, etc------------------------------- */
+
+/* ----------------------------Cards de planes del servicios------------------------------- */
+.pack_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border: 2px solid #072538;
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    max-width: 300px;
+  }
+  
+  .banner {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner_tag {
+    display: flex;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color:#DB2C75;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+  }
+  
+  .pack_name {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: rgb(31 41 55 );
+  }
+  
+  .description {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    color: rgb(107 114 128 );
+  }
+  
+  .lists > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.5rem;
+  }
+  
+  .list {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .list svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-shrink: 0;
+    color: #019df4;
+  }
+  
+  .list span {
+    color: rgb( 75 85 99 );
+  }
+  
+  .bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .price_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  
+  .devise {
+    align-self: flex-start;
+    color: rgb( 75 85 99 );
+  }
+  
+  .price {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: rgb(31 41 55 );
+  }
+  
+  .date {
+    color: rgb(107 114 128 );
+  }
+  
+  .btn {
+    display: block;
+    border-radius: 0.5rem;
+    background-color: #019df4;
+    ;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: all .1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn:hover {
+    background-color: rgb(79 70 229 );
+  }
+  
+  .btn:active {
+    background-color: rgb(67 56 202 );
+  }
+
+  /* ----------------------------Minis cards de beneficios------------------------------- */
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .text {
+    color: black;
+    text-align: center;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+    color: white;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  .card-5 {
+    background: radial-gradient(white);
+  }
+  
+  .img-card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  } 
+  .img-benefi{
+    width: 40px;
+  }
+  .title-cards-benefi{
+    color: black;
+    padding-top: 10px;
+  }
+
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+
+  /* ----------------------------Botton navbar------------------------------- */
+
+  .button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #072538;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      #019DF4 10.8%,
+      #072538 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+/* -----------------------------Style Footer---------------------------- */
+
+  .btn-footer {
+    display: block;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #072538;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: all .1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-footer:hover {
+    background-color: #019DF4 ;
+  }
+
+  @charset "utf-8";
+  .tarjeta{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:920px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    height: 100px;
+  }
+  .titulo{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+  }
+  .cuerpo{
+    padding: 10px;
+  }
+  .pie{
+    background: #6699ff;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+  }
+  .pie a{
+    text-decoration: none;
+    color: white;
+  }
+  .pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""
+  }
+
+.preguntas{
+display: flex;
+flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+}
